@@ -32,15 +32,15 @@
             <th scope="col">Delete</th>
         </tr>
     </thead>
-    @foreach (var Doughnut in Model.Doughnuts)
+    @foreach (var doughnut in Model.doughnuts)
     {
         <tr>
-            <td>@Doughnut.Name</td>
-            <td>@($"{Doughnut.Price:C}")</td>
-            <td>@Doughnut.Size</td>
-            <td>@Model.HasGlazeText(Doughnut)</td>
+            <td>@doughnut.Name</td>
+            <td>@($"{doughnut.Price:C}")</td>
+            <td>@doughnut.Size</td>
+            <td>@Model.HasGlazeText(doughnut)</td>
             <td>
-                <form method="post" asp-page-handler="Delete" asp-route-id="@Doughnut.Id">
+                <form method="post" asp-page-handler="Delete" asp-route-id="@doughnut.Id">
                     <button class="btn btn-danger">Delete</button>
                 </form>
             </td>
