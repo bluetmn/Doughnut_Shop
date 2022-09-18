@@ -1,0 +1,53 @@
+﻿@page
+@using RazorPagesDoughnuts.Models
+@model RazorPagesDoughnuts.Pages.DoughnutModel
+@{
+    ViewData["Title"] = "Doughnut List";
+}
+
+<h1>Doughnut List </h1>
+<form method="post" class="card p-3">
+    <div class="row">
+        <div asp-validation-summary="All"></div>
+    </div>
+    <div class="form-group mb-0 align-middle">
+        <label asp-for="NewDoughnut.Name">Name</label>
+        <input type="text" asp-for="NewDoughnut.Name" class="mr-5">
+        <label asp-for="NewDoughnut.Size">Size</label>
+        <select asp-for="NewDoughnut.Size" asp-items="Html.GetEnumSelectList<DoughnutSize>()" class="mr-5"></select>
+        <label asp-for="NewDoughnut.Price"></label>
+        <input asp-for="NewDoughnut.Price" class="mr-5" />
+        <label asp-for="NewDoughnut.HasGlaze">Has Glaze</label>
+        <input type="checkbox" asp-for="NewDoughnut.HasGlaze" class="mr-5">
+        <button class="btn btn-primary">Add</button>
+    </div>
+</form>
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Size</th>
+            <th scope="col">Has Glaze</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    @foreach (var Doughnut in Model.Doughnuts)
+    {
+        <tr>
+            <td>@Doughnut.Name</td>
+            <td>@($"{Doughnut.Price:C}")</td>
+            <td>@Doughnut.Size</td>
+            <td>@Model.HasGlazeText(Doughnut)</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@Doughnut.Id">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}
