@@ -1,41 +1,41 @@
 [
     {
-    "id":"10",
+    "id":10,
     "name":"Cotton Candy",
     "size":"regular",
-    "price":"5.50",
-    "glazed":"true"
+    "price":5.50,
+    "glazed":true
     },
 
     {
-    "id":"11",
+    "id":11,
     "name": "Salted Caramel",
     "size":"super",
-    "price":"10.00",
-    "glazed":"true"
+    "price":10.00,
+    "glazed":true
     },
     
     {
-    "id":"12",
+    "id":12,
     "name":"KitKat",
     "size":"super",
-    "price":"7.00",
-    "glazed":"false"
+    "price":7.00,
+    "glazed":false
     },
 
     {
-    "id":"13",
+    "id":13,
     "name":"Banana Split",
     "size":"regular",
-    "price":"5.50",
-    "glazed":"false"
+    "price":5.50,
+    "glazed":false
     },
 
     {
-    "id":"14",
+    "id":14,
     "name":"Glazed",
     "size":"regular",
-    "price":"6.50",
-    "glazed":"true"
+    "price":6.50,
+    "glazed":true
     }
 ]

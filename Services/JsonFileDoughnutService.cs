@@ -19,14 +19,21 @@ namespace RazorPagesDoughnuts.Services
         private string JsonFileName => Path.Combine(WebHostEnv.WebRootPath, "data", "doughnutdata.json")!; 
 
 
-        public IEnumerable<Doughnut> GetProducts()
+        // JsonSerializerOptions options = new JsonSerializerOptions();
+        // JsonConverter enumconverter = new JsonStringEnumConverter();
+        // options.Converters.Add(enumconverter);
+
+
+        public IEnumerable<Doughnut> GetDoughnuts()
         {
+            var serializeoptions = new JsonSerializerOptions() {
+            PropertyNameCaseInsensitive = true,
+            Converters = {
+                new JsonStringEnumConverter()
+            }
+        };
             using var jsonFileReader = File.OpenText(JsonFileName);
-            return JsonSerializer.Deserialize<Doughnut[]>(jsonFileReader.ReadToEnd(),
-                new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                })!;
+            return JsonSerializer.Deserialize<Doughnut[]>(jsonFileReader.ReadToEnd(), serializeoptions)!;
         }
     }
 
