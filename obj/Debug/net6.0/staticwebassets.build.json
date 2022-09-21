@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XarztQ3DfDSGJ459KJRfM0yaSdHkITuSaU6ddeAisH4=",
+  "Hash": "xHEj7fTcKxHuLvxepuirUSPNmPZgfFakQeKLFz9ePvc=",
   "Source": "RazorPagesDoughnuts",
   "BasePath": "_content/RazorPagesDoughnuts",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\doughnutdata.json"
+    },
+    {
+      "Identity": "C:\\Users\\thoma\\DotNet\\RazorPagesDoughnuts\\wwwroot\\doughnut.jpg",
+      "SourceId": "RazorPagesDoughnuts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thoma\\DotNet\\RazorPagesDoughnuts\\wwwroot\\",
+      "BasePath": "_content/RazorPagesDoughnuts",
+      "RelativePath": "doughnut.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\doughnut.jpg"
     },
     {
       "Identity": "C:\\Users\\thoma\\DotNet\\RazorPagesDoughnuts\\wwwroot\\favicon.ico",

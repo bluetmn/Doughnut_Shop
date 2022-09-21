@@ -6,11 +6,12 @@
 
 <div class="text-center">
     <h1 class="display-4">The Doughnut Shop</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@foreach (var doughnut in Model.Doughnuts) {
-    <h2>
-        @doughnut.Name
-    </h2>
-}
+<div class="card-columns">
+    @foreach (var doughnut in Model.Doughnuts) {
+            <div class="card">
+                <h5 class="card-title">@doughnut.Name</h5>
+            </div>
+    }
+</div>
