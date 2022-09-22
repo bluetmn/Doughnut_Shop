@@ -1,17 +1,20 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">The Doughnut Shop</h1>
+<div class=header-text>
+    <h1>The Doughnut Shop</h1>
+    <h5>For all your doughnut needs!</h5>
 </div>
 
-<div class="card-columns">
-    @foreach (var doughnut in Model.Doughnuts) {
-            <div class="card">
-                <h5 class="card-title">@doughnut.Name</h5>
-            </div>
-    }
+<div class=become-member>
+    <div class=member-image>
+        <p>Become a Member Today!</p>
+    </div>
+
+    <div class=member-benefits>
+        <p> Did you know about these member benefits?</p>
+    </div>
 </div>

@@ -1,0 +1,17 @@
+@page
+@model DoughnutPageModel
+@{
+    ViewData["Title"] = "Doughnut Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">The Doughnut Shop</h1>
+</div>
+
+<div class="card-columns">
+    @foreach (var doughnut in Model.Doughnuts) {
+            <div class="card">
+                <h5 class="card-title">@doughnut.Name</h5>
+            </div>
+    }
+</div>

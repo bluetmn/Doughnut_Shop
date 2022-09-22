@@ -19,5 +19,42 @@ body {
 }
 
 .card {
-  display:inline;
+  display:inline-block;
+}
+
+.header-text h1 {
+  font-size:50px;
+  text-decoration: underline;
+  text-align: center;
+  color: green;
+}
+
+.header-text h5 {
+  font-size: 25px;
+  text-align: center;
+  color: green;
+}
+
+.become-member {
+  height:500px;
+}
+
+.member-image {
+  height:100%;
+  background-image: url('../rainbow_sprinkle_donut.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.member-image p {
+  width:60%;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.member-benefits {
+  width:40%;
+  display:inline-block;
 }

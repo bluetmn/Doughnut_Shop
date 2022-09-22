@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xHEj7fTcKxHuLvxepuirUSPNmPZgfFakQeKLFz9ePvc=",
+  "Hash": "UGUs0wP9sdIsZgNyHzYnNu2DUcP148RDHMfResURQsU=",
   "Source": "RazorPagesDoughnuts",
   "BasePath": "_content/RazorPagesDoughnuts",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\thoma\\DotNet\\RazorPagesDoughnuts\\wwwroot\\Rainbow_sprinkle_donut.jpg",
+      "SourceId": "RazorPagesDoughnuts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thoma\\DotNet\\RazorPagesDoughnuts\\wwwroot\\",
+      "BasePath": "_content/RazorPagesDoughnuts",
+      "RelativePath": "Rainbow_sprinkle_donut.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rainbow_sprinkle_donut.jpg"
     }
   ]
 }
