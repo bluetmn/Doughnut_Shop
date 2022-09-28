@@ -1,0 +1,37 @@
+@page
+@model RazorPagesDoughnuts.Pages.doughnuts.IndexModel
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Doughnut List</h2>
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+
+    <br></br>
+    <br></br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Doughnut Name
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var obj in Model.Doughnuts) {
+                <tr>
+                    <td>V@obj.Name</td>
+                    <td>@obj.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
