@@ -1,0 +1,20 @@
+@page
+@model RazorPagesDoughnuts.Pages.doughnuts.CreateModel
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Create Doughnut</h2>
+            <hr></hr>
+        </div>
+        <div class="mb-3">
+            Name:
+            <input type="text" name="doughnutName">
+        </div>
+        <div class="mb-3">
+            Price:
+            <input type="text" name="doughnutPrice">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+    </div>
+</form>
