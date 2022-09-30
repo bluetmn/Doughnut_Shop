@@ -8,12 +8,12 @@
             <hr></hr>
         </div>
         <div class="mb-3">
-            Name:
-            <input type="text" name="doughnutName">
+            <label asp-for="Doughnut!.Name"></label>
+            <input asp-for="@Model.Doughnut!.Name" class="form-control">
         </div>
         <div class="mb-3">
-            Price:
-            <input type="text" name="doughnutPrice">
+            <label asp-for="Doughnut!.Price"></label>
+            <input asp-for="@Model.Doughnut!.Price" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
     </div>
